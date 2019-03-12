@@ -45,7 +45,7 @@ var synth = new Tone.Synth({
 
 // Sample code to load a sound file
 // NOTE: This sound file is not played in this script
-var Vocal = new Tone.Player('audio/Audio11PatVocal.aif').connect(pitchShift);
+var Vocal = new Tone.Player('audio/Audio11PatVocal.wav').connect(pitchShift);
 
 // Bind slider value to pitch shift amount
 // Every change in slider value triggers change in pitch shift
@@ -65,7 +65,7 @@ document.querySelector('#playButton').onclick = function() {
   console.log('The play button has been clicked.');
 
   // Play a middle C, which will sound until the stop button is clicked
-  Vocal.start(Audio11PatVocal);
+  Vocal.start();
 };
 
 // The following block of code will run when the stop button is clicked
