@@ -65,13 +65,13 @@ document.querySelector('#playButton').onclick = function() {
   console.log('The play button has been clicked.');
 
   // Play a middle C, which will sound until the stop button is clicked
-  Vocal.start();
+  Vocal.start(Audio11PatVocal);
 };
 
 // The following block of code will run when the stop button is clicked
 document.querySelector('#stopButton').onclick = function() {
   console.log('The stop button has been clicked.');
-  Vocal.stop();
+  Vocal.stop(Audio11PatVocal);
 
   // Stop the note from sounding
   synth.triggerRelease();
