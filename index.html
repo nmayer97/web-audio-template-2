@@ -71,7 +71,7 @@ document.querySelector('#playButton').onclick = function() {
 // The following block of code will run when the stop button is clicked
 document.querySelector('#stopButton').onclick = function() {
   console.log('The stop button has been clicked.');
-  Vocal.stop(Audio11PatVocal);
+  Vocal.stop();
 
   // Stop the note from sounding
   synth.triggerRelease();
